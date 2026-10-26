@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haider Ali | Senior DevOps & Cloud Infrastructure Engineer | SRE</title>
+    <meta name="description" content="Portfolio of Haider Ali, Senior DevOps Engineer & SRE with 6 years of experience specializing in AWS infrastructure automation, Kubernetes (EKS), Terraform, Terragrunt, DevSecOps, and AI-assisted operations. AWS & CKA Certified.">
+    <meta name="keywords" content="Senior DevOps Engineer, Cloud Infrastructure Engineer, Site Reliability Engineer, SRE, AWS Certified Solutions Architect, CKA, Terraform, Kubernetes, EKS, GitHub Actions, DevSecOps, Cloud Cost Optimization">
+    <meta name="author" content="Haider Ali">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Haider Ali | Senior DevOps & Cloud Infrastructure Engineer">
+    <meta property="og:description" content="Senior DevOps & SRE with 6+ years automating 2,000+ AWS resources, migrating 1,000+ CI/CD pipelines, and driving EKS scalability.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://linkedin.com/in/haider-ali-iub">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            900: '#134e4a',
+                        },
+                        navy: {
+                            800: '#0f172a',
+                            900: '#0b1120',
+                            950: '#060913',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Embedded Silent JSON-LD Structured Data for AEO & SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Haider Ali",
+      "jobTitle": "Senior DevOps Engineer & Cloud Infrastructure SRE",
+      "telephone": "+92 304 918 2908",
+      "email": "haiderch363@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lahore",
+        "addressCountry": "Pakistan"
+      },
+      "sameAs": [
+        "https://linkedin.com/in/haider-ali-iub"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "AWS Certified Solutions Architect - Associate",
+          "offeredBy": {
+            "@type": "Organization",
+            "name": "Amazon Web Services"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Certified Kubernetes Administrator (CKA)",
+          "offeredBy": {
+            "@type": "Organization",
+            "name": "Cloud Native Computing Foundation"
+          }
+        }
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "The Islamia University of Bahawalpur"
+      },
+      "worksFor": [
+        {
+          "@type": "EmployeeRole",
+          "roleName": "Site Reliability Engineer (SRE)",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Careem (Uber)"
+          },
+          "startDate": "2022-09",
+          "endDate": "2026-05"
+        },
+        {
+          "@type": "EmployeeRole",
+          "roleName": "DevOps Engineer",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Eurus Technologies"
+          },
+          "startDate": "2020-08",
+          "endDate": "2022-08"
+        }
+      ],
+      "knowsAbout": [
+        "AWS", "Kubernetes", "Amazon EKS", "Terraform", "Terragrunt", "GitHub Actions",
+        "Jenkins", "Docker", "Prometheus", "Grafana", "DevSecOps", "SRE", "Cloud Cost Optimization",
+        "Claude API", "MCP Servers", "Python", "Bash", "HIPAA Compliance", "PCI-DSS Compliance"
+      ]
+    }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #060913;
+            color: #94a3b8;
+        }
+        .font-mono {
+            font-family: 'Fira Code', monospace;
+        }
+        .bg-grid-pattern {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #060913;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="antialiased text-slate-300 selection:bg-teal-500 selection:text-slate-950">
+
+    <!-- Top Navigation Header -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <a href="#hero" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-500 to-cyan-500 flex items-center justify-center font-mono font-bold text-navy-950 shadow-lg shadow-teal-500/20 group-hover:scale-105 transition-transform">
+                    HA
+                </div>
+                <div>
+                    <span class="text-white font-bold text-lg tracking-tight block group-hover:text-teal-400 transition-colors">Haider Ali</span>
+                    <span class="text-xs font-mono text-teal-400 block -mt-1">Sr. DevOps & SRE</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="text-slate-300 hover:text-teal-400 transition-colors">About</a>
+                <a href="#case-studies" class="text-slate-300 hover:text-teal-400 transition-colors">Case Studies</a>
+                <a href="#experience" class="text-slate-300 hover:text-teal-400 transition-colors">Experience</a>
+                <a href="#skills" class="text-slate-300 hover:text-teal-400 transition-colors">Skills Matrix</a>
+                <a href="#aeo-faq" class="text-slate-300 hover:text-teal-400 transition-colors">AEO FAQ</a>
+                <a href="#contact" class="text-slate-300 hover:text-teal-400 transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="https://linkedin.com/in/haider-ali-iub" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-teal-400 hover:border-teal-500/50 transition-all" title="LinkedIn Profile">
+                    <i class="fab fa-linkedin-in text-base"></i>
+                </a>
+                <a href="#contact" class="px-4 py-2 rounded-xl bg-gradient-to-r from-teal-500 to-cyan-500 text-navy-950 font-semibold text-sm hover:shadow-lg hover:shadow-teal-500/25 transition-all">
+                    Get in Touch
+                </a>
+            </div>
+
+            <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="md:hidden p-2 text-slate-400 hover:text-white focus:outline-none">
+                <i class="fas fa-bars text-xl" id="menuIcon"></i>
+            </button>
+        </div>
+
+        <div id="mobileNav" class="hidden md:hidden bg-navy-900 border-b border-slate-800 px-6 py-6 space-y-4">
+            <a href="#about" onclick="toggleMobileMenu()" class="block text-slate-200 font-medium hover:text-teal-400 py-1">About</a>
+            <a href="#case-studies" onclick="toggleMobileMenu()" class="block text-slate-200 font-medium hover:text-teal-400 py-1">Case Studies</a>
+            <a href="#experience" onclick="toggleMobileMenu()" class="block text-slate-200 font-medium hover:text-teal-400 py-1">Experience</a>
+            <a href="#skills" onclick="toggleMobileMenu()" class="block text-slate-200 font-medium hover:text-teal-400 py-1">Skills Matrix</a>
+            <a href="#aeo-faq" onclick="toggleMobileMenu()" class="block text-slate-200 font-medium hover:text-teal-400 py-1">AEO FAQ</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block text-slate-200 font-medium hover:text-teal-400 py-1">Contact</a>
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                <a href="https://linkedin.com/in/haider-ali-iub" target="_blank" class="text-teal-400 font-mono text-sm">
+                    <i class="fab fa-linkedin mr-1"></i> linkedin.com/in/haider-ali-iub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="relative min-h-[90vh] flex items-center py-20 bg-grid-pattern overflow-hidden">
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-teal-500/10 blur-[140px] rounded-full pointer-events-none"></div>
+            <div class="absolute bottom-10 right-10 w-[400px] h-[250px] bg-cyan-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-7 space-y-8">
+                        <div class="flex flex-wrap items-center gap-3">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-mono bg-teal-500/10 text-teal-400 border border-teal-500/20">
+                                <span class="w-2 h-2 rounded-full bg-teal-400 animate-pulse mr-2"></span> Available for Remote & Consulting Roles
+                            </span>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-mono bg-slate-800 text-slate-300 border border-slate-700">
+                                <i class="fas fa-location-dot text-teal-400 mr-2"></i> Lahore, Pakistan
+                            </span>
+                        </div>
+
+                        <div class="space-y-4">
+                            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                                Building Resilient <br>
+                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-500">
+                                    Cloud Infrastructure & SRE Platform Engineering
+                                </span>
+                            </h1>
+                            <p class="text-lg text-slate-400 max-w-2xl font-normal leading-relaxed">
+                                Senior DevOps & Cloud Infrastructure Engineer with <strong class="text-slate-200">6 years of enterprise experience</strong> across AWS, Kubernetes, Terraform, and GitOps. Former SRE at <strong class="text-slate-200">Careem (Uber)</strong>, specializing in platform automation, cloud security, cost optimization, and AI-assisted infrastructure operations.
+                            </p>
+                        </div>
+
+                        <div class="pt-2 flex flex-wrap gap-4">
+                            <div class="flex items-center space-x-3 px-4 py-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-slate-700 transition">
+                                <i class="fab fa-aws text-2xl text-amber-500"></i>
+                                <div>
+                                    <div class="text-xs text-slate-400 font-mono">Certified</div>
+                                    <div class="text-sm font-semibold text-white">AWS Solutions Architect - Associate</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3 px-4 py-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-slate-700 transition">
+                                <i class="fas fa-dharmachakra text-2xl text-cyan-400"></i>
+                                <div>
+                                    <div class="text-xs text-slate-400 font-mono">CNCF Certified</div>
+                                    <div class="text-sm font-semibold text-white">Certified Kubernetes Administrator (CKA)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-4 pt-4">
+                            <a href="#case-studies" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-teal-500 to-cyan-500 text-navy-950 font-bold hover:shadow-xl hover:shadow-teal-500/20 transition-all flex items-center space-x-2">
+                                <span>View Case Studies</span>
+                                <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                            <a href="#contact" class="px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold border border-slate-800 hover:border-slate-700 transition-all flex items-center space-x-2">
+                                <i class="far fa-calendar-check text-teal-400"></i>
+                                <span>Book Discovery Call</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5">
+                        <div class="relative rounded-2xl bg-navy-900/90 border border-slate-800 p-5 shadow-2xl backdrop-blur-md">
+                            <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-4">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
+                                    <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+                                    <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+                                </div>
+                                <div class="text-xs font-mono text-slate-500">infrastructure_as_code.tf</div>
+                            </div>
+
+                            <div class="font-mono text-xs sm:text-sm space-y-2 overflow-x-auto text-slate-300">
+                                <p><span class="text-purple-400">module</span> <span class="text-teal-300">"eks_cluster"</span> {</p>
+                                <p class="pl-4"><span class="text-slate-500">source</span>  = <span class="text-emerald-400">"terraform-aws-modules/eks/aws"</span></p>
+                                <p class="pl-4"><span class="text-slate-500">cluster_name</span> = <span class="text-emerald-400">"careem-prod-eks"</span></p>
+                                <p class="pl-4"><span class="text-slate-500">cluster_version</span> = <span class="text-emerald-400">"1.29"</span></p>
+                                <br>
+                                <p class="pl-4 text-slate-500"># Self-service platform for 50+ engineers</p>
+                                <p class="pl-4"><span class="text-purple-400">enable_k6_load_testing</span> = <span class="text-amber-400">true</span></p>
+                                <p class="pl-4"><span class="text-purple-400">enable_claude_mcp_triage</span> = <span class="text-amber-400">true</span> <span class="text-slate-500"># MTTR -40%</span></p>
+                                <p class="pl-4"><span class="text-purple-400">target_slo_uptime</span>        = <span class="text-emerald-400">"99.9%"</span></p>
+                                <p>}</p>
+                                <br>
+                                <div class="p-3 rounded-lg bg-navy-950 border border-teal-500/30 flex items-center justify-between">
+                                    <span class="text-teal-400 font-semibold">$ terragrunt apply --auto-approve</span>
+                                    <span class="text-xs text-emerald-400 flex items-center"><i class="fas fa-check-circle mr-1"></i> Deployed</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 p-3 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                                    <i class="fas fa-shield-halved text-sm"></i>
+                                </div>
+                                <div class="text-xs">
+                                    <div class="font-bold text-white">Compliance Standard</div>
+                                    <div class="text-slate-400">HIPAA & PCI-DSS Multi-Cloud Scanner</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. QUICK STATS GRID -->
+        <section class="py-12 bg-navy-900 border-y border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    
+                    <div class="p-6 rounded-2xl bg-navy-950/60 border border-slate-800/80 text-center group hover:border-teal-500/40 transition">
+                        <div class="text-3xl lg:text-4xl font-extrabold text-teal-400 font-mono">2,000+</div>
+                        <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mt-2">AWS Resources Managed</div>
+                        <div class="text-[11px] text-slate-500 mt-1">Centralized IaC platform</div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-navy-950/60 border border-slate-800/80 text-center group hover:border-teal-500/40 transition">
+                        <div class="text-3xl lg:text-4xl font-extrabold text-cyan-400 font-mono">1,000+</div>
+                        <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mt-2">CI/CD Pipelines Migrated</div>
+                        <div class="text-[11px] text-slate-500 mt-1">Jenkins to GitHub Actions</div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-navy-950/60 border border-slate-800/80 text-center group hover:border-teal-500/40 transition">
+                        <div class="text-3xl lg:text-4xl font-extrabold text-emerald-400 font-mono">99.9%</div>
+                        <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mt-2">Production Uptime SLO</div>
+                        <div class="text-[11px] text-slate-500 mt-1">MTTR &lt; 15 mins for P1s</div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-navy-950/60 border border-slate-800/80 text-center group hover:border-teal-500/40 transition">
+                        <div class="text-3xl lg:text-4xl font-extrabold text-purple-400 font-mono">30%</div>
+                        <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mt-2">Cloud Cost Reduction</div>
+                        <div class="text-[11px] text-slate-500 mt-1">EKS & Reserved Instances</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ABOUT & ENGINEERING PHILOSOPHY -->
+        <section id="about" class="py-24 bg-navy-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="max-w-3xl mb-16">
+                    <div class="text-xs font-mono text-teal-400 uppercase tracking-widest mb-2">// Engineering Philosophy</div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">
+                        Eliminating Operational Toil Through Immutable Infrastructure & Automation
+                    </h2>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    
+                    <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-slate-700 transition space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-xl">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Declarative IaC & Standardization</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Infrastructure should be predictable, modular, and version-controlled. By building centralized Terraform and Terragrunt modules across AWS, Azure, and GCP, I eliminate configuration drift and enable safe, repeatable deployments across environments.
+                        </p>
+                    </div>
+
+                    <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-slate-700 transition space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl">
+                            <i class="fas fa-heart-pulse"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">SRE & High-Availability Operations</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Uptime is earned through robust observability, automated self-healing, clear runbooks, and proactive load testing. My on-call experience at Careem achieved MTTR under 15 minutes for P1 incidents while maintaining a 99.9% SLO.
+                        </p>
+                    </div>
+
+                    <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-slate-700 transition space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">AI-Assisted Operations & IDP</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Empowering product engineering teams through self-service Internal Developer Platforms (IDP) reduces manual ops requests by 90%. Integrating Claude API and Model Context Protocol (MCP) servers accelerates incident triage and runbook execution.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. DETAILED CASE STUDIES -->
+        <section id="case-studies" class="py-24 bg-navy-900 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                    <div>
+                        <div class="text-xs font-mono text-teal-400 uppercase tracking-widest mb-2">// Verified Resume Achievements</div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white">Infrastructure Case Studies</h2>
+                    </div>
+                    <p class="text-slate-400 text-sm max-w-md mt-4 md:mt-0">
+                        Deep dive into engineering problems, architectural solutions, and verified outcomes from enterprise environments.
+                    </p>
+                </div>
+
+                <div class="space-y-12">
+
+                    <!-- Case Study 1 -->
+                    <div class="rounded-3xl bg-navy-950 border border-slate-800 p-8 lg:p-10 hover:border-slate-700 transition">
+                        <div class="grid lg:grid-cols-12 gap-8 items-center">
+                            <div class="lg:col-span-7 space-y-6">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-3 py-1 rounded-full text-xs font-mono bg-teal-500/10 text-teal-400 border border-teal-500/25">Careem (Uber)</span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-mono bg-slate-800 text-slate-300">Terraform & Terragrunt</span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-mono bg-slate-800 text-slate-300">2,000+ AWS Resources</span>
+                                </div>
+                                
+                                <h3 class="text-2xl font-bold text-white">Enterprise AWS IaC & Terragrunt Standardization Platform</h3>
+                                
+                                <p class="text-slate-400 text-sm leading-relaxed">
+                                    <strong class="text-slate-200">Problem:</strong> Operating across dev, staging, and production environments without standardized automation caused severe configuration drift and manual provisioning delays taking several hours per request.
+                                </p>
+                                <p class="text-slate-400 text-sm leading-relaxed">
+                                    <strong class="text-slate-200">Solution:</strong> Architected a centralized Infrastructure as Code platform using Terraform and Terragrunt modules. Standardized 2,000+ AWS resources across multi-account structures with strict state locking and automated cost tagging.
+                                </p>
+
+                                <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                                    <div class="p-4 rounded-xl bg-slate-900 border border-slate-800/80">
+                                        <div class="text-xs font-mono text-teal-400 font-semibold">PROVISIONING SPEED</div>
+                                        <div class="text-xl font-bold text-white font-mono">&lt; 30 Minutes</div>
+                                        <div class="text-xs text-slate-500 mt-0.5">Reduced down from manual days</div>
+                                    </div>
+                                    <div class="p-4 rounded-xl bg-slate-900 border border-slate-800/80">
+                                        <div class="text-xs font-mono text-teal-400 font-semibold">DRIFT REDUCTION</div>
+                                        <div class="text-xl font-bold text-white font-mono">80% Less Drift</div>
+                                        <div class="text-xs text-slate-500 mt-0.5">Automated drift remediation</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lg:col-span-5 bg-slate-900 rounded-2xl p-6 border border-slate-800 font-mono text-xs space-y-4">
+                                <div class="text-slate-400 font-semibold border-b border-slate-800 pb-2 flex justify-between">
+                                    <span>ARCHITECTURAL STACK</span>
+                                    <span class="text-teal-400">AWS + Terragrunt</span>
+                                </div>
+                                <div class="space-y-2 text-slate-300">
+                                    <div class="flex justify-between"><span>IaC Engine:</span> <span class="text-teal-300">Terragrunt / Terraform</span></div>
+                                    <div class="flex justify-between"><span>Managed Services:</span> <span class="text-teal-300">EC2, VPC, EKS, RDS, S3</span></div>
+                                    <div class="flex justify-between"><span>State Storage:</span> <span class="text-teal-300">S3 + DynamoDB Lock</span></div>
+                                    <div class="flex justify-between"><span>Access Control:</span> <span class="text-teal-300">AWS IAM & OIDC</span></div>
+                                    <div class="flex justify-between"><span>Tagging Policy:</span> <span class="text-teal-300">Automated FinOps Tags</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 2 -->
+                    <div class="rounded-3xl bg-navy-950 border border-slate-800 p-8 lg:p-10 hover:border-slate-700 transition">
+                        <div class="grid lg:grid-cols-12 gap-8 items-center">
+                            <div class="lg:col-span-7 space-y-6">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-3 py-1 rounded-full text-xs font-mono bg-teal-500/10 text-teal-400 border border-teal-500/25">Careem (Uber)</span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-mono bg-slate-800 text-slate-300">Amazon EKS & Docker</span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-mono bg-slate-800 text-slate-300">Cloud Cost Reduction</span>
+                                </div>
+                                
+                                <h3 class="text-2xl font-bold text-white">Microservices Migration from Elastic Beanstalk to Amazon EKS</h3>
+                                
+                                <p class="text-slate-400 text-sm leading-relaxed">
+                                    <strong class="text-slate-200">Problem:</strong> AWS Elastic Beanstalk struggled with horizontal scaling limits during peak ride-hailing demand traffic, driving up cloud infrastructure overhead.
+                                </p>
+                                <p class="text-slate-400 text-sm leading-relaxed">
+                                    <strong class="text-slate-200">Solution:</strong> Containerized legacy services with Docker and orchestrated a seamless migration to Amazon EKS using Helm charts, Cluster Autoscaler, and fine-tuned HPA/VPA scaling policies.
+                                </p>
+
+                                <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                                    <div class="p-4 rounded-xl bg-slate-900 border border-slate-800/80">
+                                        <div class="text-xs font-mono text-cyan-400 font-semibold">SCALING CAPACITY</div>
+                                        <div class="text-xl font-bold text-white font-mono">4x Capacity</div>
+                                        <div class="text-xs text-slate-500 mt-0.5">Smooth peak traffic handling</div>
+                                    </div>
+                                    <div class="p-4 rounded-xl bg-slate-900 border border-slate-800/80">
+                                        <div class="text-xs font-mono text-cyan-400 font-semibold">COST REDUCTION</div>
+                                        <div class="text-xl font-bold text-white font-mono">30% Savings</div>
+                                        <div class="text-xs text-slate-500 mt-0.5">Optimized compute resource allocation</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lg:col-span-5 bg-slate-900 rounded-2xl p-6 border border-slate-800 font-mono text-xs space-y-4">
+                                <div class="text-slate-400 font-semibold border-b border-slate-800 pb-2 flex justify-between">
+                                    <span>KUBERNETES STACK</span>
+                                    <span class="text-cyan-400">Amazon EKS</span>
+                                </div>
+                                <div class="space-y-2 text-slate-300">
+                                    <div class="flex justify-between"><span>Orchestrator:</span> <span class="text-cyan-300">Kubernetes (EKS)</span></div>
+                                    <div class="flex justify-between"><span>Packaging:</span> <span class="text-cyan-300">Helm v3</span></div>
+                                    <div class="flex justify-between"><span>Autoscaling:</span> <span class="text-cyan-300">HPA + VPA Policies</span></div>
+                                    <div class="flex justify-between"><span>Registry:</span> <span class="text-cyan-300">AWS ECR</span></div>
+                                    <div class="flex justify-between"><span>Ingress:</span> <span class="text-cyan-300">AWS ALB Ingress Controller</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 3 -->
+                    <div class="rounded-3xl bg-navy-950 border border-slate-800 p-8 lg:p-10 hover:border-slate-700 transition">
+                        <div class="grid lg:grid-cols-12 gap-8 items-center">
+                            <div class="lg:col-span-7 space-y-6">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-3 py-1 rounded-full text-xs font-mono bg-teal-500/10 text-teal-400 border border-teal-500/25">Careem (Uber)</span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-mono bg-slate-800 text-slate-300">1,000+ Microservices</span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-mono bg-slate-800 text-slate-300">CI/CD Modernization</span>
+                                </div>
+                                
+                                <h3 class="text-2xl font-bold text-white">Enterprise CI/CD Migration: Jenkins to GitHub Actions</h3>
+                                
+                                <p class="text-slate-400 text-sm leading-relaxed">
+                                    <strong class="text-slate-200">Problem:</strong> Legacy Jenkins servers required high maintenance, created build bottlenecks across 1,000+ microservices, and suffered from slow pipeline feedback loops.
+                                </p>
+                                <p class="text-slate-400 text-sm leading-relaxed">
+                                    <strong class="text-slate-200">Solution:</strong> Designed reusable GitHub Actions workflows with containerized build agents, parallel matrix builds, caching layers, and integrated K6 automated load testing.
+                                </p>
+
+                                <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                                    <div class="p-4 rounded-xl bg-slate-900 border border-slate-800/80">
+                                        <div class="text-xs font-mono text-emerald-400 font-semibold">BUILD VELOCITY</div>
+                                        <div class="text-xl font-bold text-white font-mono">25% Faster</div>
+                                        <div class="text-xs text-slate-500 mt-0.5">Average build time reduction</div>
+                                    </div>
+                                    <div class="p-4 rounded-xl bg-slate-900 border border-slate-800/80">
+                                        <div class="text-xs font-mono text-emerald-400 font-semibold">RELIABILITY</div>
+                                        <div class="text-xl font-bold text-white font-mono">1,000+ Services</div>
+                                        <div class="text-xs text-slate-500 mt-0.5">Standardized workflow templates</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lg:col-span-5 bg-slate-900 rounded-2xl p-6 border border-slate-800 font-mono text-xs space-y-4">
+                                <div class="text-slate-400 font-semibold border-b border-slate-800 pb-2 flex justify-between">
+                                    <span>CI/CD PIPELINE STACK</span>
+                                    <span class="text-emerald-400">GitHub Actions</span>
+                                </div>
+                                <div class="space-y-2 text-slate-300">
+                                    <div class="flex justify-between"><span>Platform:</span> <span class="text-emerald-300">GitHub Actions</span></div>
+                                    <div class="flex justify-between"><span>Testing:</span> <span class="text-emerald-300">K6 Distributed Load</span></div>
+                                    <div class="flex justify-between"><span>Security:</span> <span class="text-emerald-300">SonarQube + Secrets Scanning</span></div>
+                                    <div class="flex justify-between"><span>Deployments:</span> <span class="text-emerald-300">Automated EKS Deployments</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 4 -->
+                    <div class="rounded-3xl bg-navy-950 border border-slate-800 p-8 lg:p-10 hover:border-slate-700 transition">
+                        <div class="grid lg:grid-cols-12 gap-8 items-center">
+                            <div class="lg:col-span-7 space-y-6">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-3 py-1 rounded-full text-xs font-mono bg-teal-500/10 text-teal-400 border border-teal-500/25">Eurus Technologies</span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-mono bg-slate-800 text-slate-300">Serverless Architecture</span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-mono bg-slate-800 text-slate-300">HIPAA & PCI-DSS</span>
+                                </div>
+                                
+                                <h3 class="text-2xl font-bold text-white">Serverless Multi-Cloud Compliance & Image Optimization Platform</h3>
+                                
+                                <p class="text-slate-400 text-sm leading-relaxed">
+                                    <strong class="text-slate-200">Problem:</strong> Clients required real-time compliance monitoring across AWS, GCP, and Azure accounts alongside ultra-fast image processing for high-volume requests.
+                                </p>
+                                <p class="text-slate-400 text-sm leading-relaxed">
+                                    <strong class="text-slate-200">Solution:</strong> Engineered a serverless backend using AWS Lambda, API Gateway, DynamoDB, SNS/SQS, and CloudFront. Built automated scanning engines for HIPAA and PCI-DSS compliance across 100+ accounts.
+                                </p>
+
+                                <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                                    <div class="p-4 rounded-xl bg-slate-900 border border-slate-800/80">
+                                        <div class="text-xs font-mono text-purple-400 font-semibold">P99 LATENCY</div>
+                                        <div class="text-xl font-bold text-white font-mono">&lt; 200 ms</div>
+                                        <div class="text-xs text-slate-500 mt-0.5">Millions of daily requests</div>
+                                    </div>
+                                    <div class="p-4 rounded-xl bg-slate-900 border border-slate-800/80">
+                                        <div class="text-xs font-mono text-purple-400 font-semibold">SCALE COVERAGE</div>
+                                        <div class="text-xl font-bold text-white font-mono">100+ Accounts</div>
+                                        <div class="text-xs text-slate-500 mt-0.5">Multi-cloud AWS, GCP, Azure</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lg:col-span-5 bg-slate-900 rounded-2xl p-6 border border-slate-800 font-mono text-xs space-y-4">
+                                <div class="text-slate-400 font-semibold border-b border-slate-800 pb-2 flex justify-between">
+                                    <span>SERVERLESS STACK</span>
+                                    <span class="text-purple-400">AWS Lambda</span>
+                                </div>
+                                <div class="space-y-2 text-slate-300">
+                                    <div class="flex justify-between"><span>Compute:</span> <span class="text-purple-300">AWS Lambda</span></div>
+                                    <div class="flex justify-between"><span>API & Storage:</span> <span class="text-purple-300">API Gateway + DynamoDB</span></div>
+                                    <div class="flex justify-between"><span>Messaging:</span> <span class="text-purple-300">SNS + SQS Queues</span></div>
+                                    <div class="flex justify-between"><span>CDN Edge:</span> <span class="text-purple-300">Amazon CloudFront</span></div>
+                                    <div class="flex justify-between"><span>Compliance:</span> <span class="text-purple-300">HIPAA & PCI-DSS Monitoring</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. PROFESSIONAL EXPERIENCE TIMELINE -->
+        <section id="experience" class="py-24 bg-navy-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="max-w-3xl mb-16">
+                    <div class="text-xs font-mono text-teal-400 uppercase tracking-widest mb-2">// Employment History</div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">6 Years of Professional SRE & DevOps Leadership</h2>
+                </div>
+
+                <div class="relative border-l-2 border-slate-800 ml-4 lg:ml-8 space-y-12">
+
+                    <!-- Careem -->
+                    <div class="relative pl-8 group">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-teal-500 border-4 border-navy-950 group-hover:scale-125 transition-transform"></div>
+                        
+                        <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition space-y-4">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-4">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white">Site Reliability Engineer (SRE)</h3>
+                                    <div class="text-teal-400 font-medium text-base">Careem (Uber)</div>
+                                </div>
+                                <div class="font-mono text-xs px-3 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700 self-start sm:self-center">
+                                    September 2022 — May 2026
+                                </div>
+                            </div>
+
+                            <ul class="space-y-3 text-sm text-slate-400 list-disc list-inside leading-relaxed">
+                                <li>Architected centralized IaC platform using <strong class="text-slate-200">Terraform & Terragrunt</strong> managing 2,000+ AWS resources across dev, staging, and production; reduced manual provisioning to &lt;30 mins and drift by 80%.</li>
+                                <li>Led microservices migration from AWS Elastic Beanstalk to <strong class="text-slate-200">Amazon EKS</strong>, expanding scaling capacity 4x and reducing cloud costs by 30%.</li>
+                                <li>Migrated CI/CD pipelines for 1,000+ services from Jenkins to <strong class="text-slate-200">GitHub Actions</strong>, cutting average build times by 25%.</li>
+                                <li>Maintained a <strong class="text-slate-200">99.9% uptime SLO</strong> using Prometheus, Grafana, PagerDuty, and 24/7 on-call rotations with MTTR &lt;15 mins for P1 incidents.</li>
+                                <li>Built an Internal Developer Platform (IDP) for 50+ engineers, cutting manual operational workload by 90%.</li>
+                                <li>Integrated <strong class="text-slate-200">Claude API & MCP servers</strong> into internal infrastructure tooling, accelerating incident triage speed by 40%.</li>
+                                <li>Automated certificate renewal, log rotation, snapshot cleanup, and cost tagging with Python and Bash, saving 5 hours/week per engineer.</li>
+                                <li>Built a K6-based distributed load testing platform integrated directly into CI/CD pipelines.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Eurus Technologies -->
+                    <div class="relative pl-8 group">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-cyan-500 border-4 border-navy-950 group-hover:scale-125 transition-transform"></div>
+                        
+                        <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition space-y-4">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-4">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white">DevOps Engineer</h3>
+                                    <div class="text-cyan-400 font-medium text-base">Eurus Technologies</div>
+                                </div>
+                                <div class="font-mono text-xs px-3 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700 self-start sm:self-center">
+                                    August 2020 — August 2022
+                                </div>
+                            </div>
+
+                            <ul class="space-y-3 text-sm text-slate-400 list-disc list-inside leading-relaxed">
+                                <li>Designed and built serverless backend for Cloud Compliance Monitoring SaaS (AWS Lambda, API Gateway, DynamoDB, SNS, SQS, S3, CodePipeline) supporting 100+ accounts for <strong class="text-slate-200">HIPAA and PCI-DSS compliance</strong>.</li>
+                                <li>Engineered serverless image optimization platform (Lambda, S3, CloudFront) serving millions of daily requests with p99 latency &lt;200ms.</li>
+                                <li>Provisioned multi-account AWS environments using Terraform and CloudFormation across 3 product teams.</li>
+                                <li>Deployed and managed containerized applications on Kubernetes cluster with horizontal (HPA) and vertical (VPA) auto-scaling policies.</li>
+                                <li>Configured Azure Virtual Machines, Azure Functions, and Azure Blob Storage for enterprise client workloads.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. TECHNICAL SKILLS MATRIX -->
+        <section id="skills" class="py-24 bg-navy-900 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="max-w-3xl mb-16">
+                    <div class="text-xs font-mono text-teal-400 uppercase tracking-widest mb-2">// Core Competencies</div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Technical Skills & Tooling Matrix</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <div class="p-6 rounded-2xl bg-navy-950 border border-slate-800 hover:border-slate-700 transition space-y-4">
+                        <div class="flex items-center space-x-3 text-amber-400 font-semibold border-b border-slate-800 pb-3">
+                            <i class="fab fa-aws text-xl"></i>
+                            <h3 class="text-lg text-white">Cloud Platforms</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-200">AWS (Expert)</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">EC2 / EKS / ECS</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">Lambda & Serverless</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">RDS / DynamoDB</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">S3 / CloudFront</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">Azure & GCP</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-navy-950 border border-slate-800 hover:border-slate-700 transition space-y-4">
+                        <div class="flex items-center space-x-3 text-teal-400 font-semibold border-b border-slate-800 pb-3">
+                            <i class="fas fa-code-branch text-xl"></i>
+                            <h3 class="text-lg text-white">Infrastructure as Code</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-teal-300">Terraform</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-teal-300">Terragrunt</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">AWS CloudFormation</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">AWS CDK</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">Ansible</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-navy-950 border border-slate-800 hover:border-slate-700 transition space-y-4">
+                        <div class="flex items-center space-x-3 text-cyan-400 font-semibold border-b border-slate-800 pb-3">
+                            <i class="fas fa-dharmachakra text-xl"></i>
+                            <h3 class="text-lg text-white">Containers & Kubernetes</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-cyan-300">Kubernetes (CKA)</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-cyan-300">Amazon EKS</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">Docker</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">Helm v3</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">Argo CD / GitOps</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">HPA & VPA Scaling</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-navy-950 border border-slate-800 hover:border-slate-700 transition space-y-4">
+                        <div class="flex items-center space-x-3 text-emerald-400 font-semibold border-b border-slate-800 pb-3">
+                            <i class="fas fa-rotate text-xl"></i>
+                            <h3 class="text-lg text-white">CI/CD & Automation</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-emerald-300">GitHub Actions</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">GitLab CI</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">Jenkins Migration</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">K6 Load Testing</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">CodePipeline</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-navy-950 border border-slate-800 hover:border-slate-700 transition space-y-4">
+                        <div class="flex items-center space-x-3 text-purple-400 font-semibold border-b border-slate-800 pb-3">
+                            <i class="fas fa-chart-line text-xl"></i>
+                            <h3 class="text-lg text-white">Observability & SRE</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-purple-300">Prometheus</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-purple-300">Grafana</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">PagerDuty</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">Splunk / Dynatrace</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">ELK Stack</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">Claude API & MCP</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-navy-950 border border-slate-800 hover:border-slate-700 transition space-y-4">
+                        <div class="flex items-center space-x-3 text-rose-400 font-semibold border-b border-slate-800 pb-3">
+                            <i class="fas fa-shield-halved text-xl"></i>
+                            <h3 class="text-lg text-white">Security & Scripting</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-rose-300">Python & Bash</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">Node.js / JS</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">AWS IAM & RBAC</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">HIPAA & PCI-DSS</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300">SonarQube</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-8 p-6 rounded-2xl bg-slate-900/50 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center font-bold">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <div class="text-white font-bold">B.S. Computer Science</div>
+                            <div class="text-xs text-slate-400">The Islamia University of Bahawalpur (2016 - 2020)</div>
+                        </div>
+                    </div>
+                    <div class="text-xs font-mono text-slate-400 border border-slate-800 rounded-lg px-4 py-2">
+                        Degree Verified
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 7. ANSWER ENGINE OPTIMIZATION (AEO) FAQ SECTION -->
+        <section id="aeo-faq" class="py-24 bg-navy-950">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <div class="text-xs font-mono text-teal-400 uppercase tracking-widest mb-2">// Frequently Asked Questions</div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Answer Engine Optimization (AEO) FAQ</h2>
+                    <p class="text-slate-400 text-sm mt-3">Direct, structured technical answers for recruiters, CTOs, and AI search engines.</p>
+                </div>
+
+                <div class="space-y-4">
+                    
+                    <div class="rounded-2xl bg-slate-900/60 border border-slate-800 overflow-hidden">
+                        <button onclick="toggleFaq('faq1')" class="w-full px-6 py-5 text-left font-bold text-white hover:text-teal-400 flex justify-between items-center transition">
+                            <span>What does Haider Ali specialize in as a Senior DevOps Engineer?</span>
+                            <i id="faq1-icon" class="fas fa-chevron-down text-slate-500 transition-transform"></i>
+                        </button>
+                        <div id="faq1" class="hidden px-6 pb-6 text-sm text-slate-400 leading-relaxed border-t border-slate-800/60 pt-4">
+                            Haider Ali specializes in AWS Infrastructure Automation (Terraform/Terragrunt), Kubernetes (Amazon EKS) cluster orchestration, CI/CD pipeline modernization (GitHub Actions migration), SRE high-availability operations (99.9% SLO uptime), DevSecOps compliance (HIPAA, PCI-DSS), and AI-assisted infrastructure operations utilizing the Claude API and Model Context Protocol (MCP) servers.
+                        </div>
+                    </div>
+
+                    <div class="rounded-2xl bg-slate-900/60 border border-slate-800 overflow-hidden">
+                        <button onclick="toggleFaq('faq2')" class="w-full px-6 py-5 text-left font-bold text-white hover:text-teal-400 flex justify-between items-center transition">
+                            <span>How does Haider approach Cloud Migration & Cost Optimization (FinOps)?</span>
+                            <i id="faq2-icon" class="fas fa-chevron-down text-slate-500 transition-transform"></i>
+                        </button>
+                        <div id="faq2" class="hidden px-6 pb-6 text-sm text-slate-400 leading-relaxed border-t border-slate-800/60 pt-4">
+                            Haider approaches migration by containerizing services with Docker and deploying to Amazon EKS using Helm charts and dynamic HPA/VPA scaling. At Careem (Uber), this improved horizontal scaling by 4x and reduced AWS costs by 30%. He implements cost optimization through Savings Plans, Reserved Instances, automated S3 lifecycle rules, dynamic pod resource requests, and automated cost-tagging scripts.
+                        </div>
+                    </div>
+
+                    <div class="rounded-2xl bg-slate-900/60 border border-slate-800 overflow-hidden">
+                        <button onclick="toggleFaq('faq3')" class="w-full px-6 py-5 text-left font-bold text-white hover:text-teal-400 flex justify-between items-center transition">
+                            <span>What experience does Haider have with AI-Assisted SRE Operations?</span>
+                            <i id="faq3-icon" class="fas fa-chevron-down text-slate-500 transition-transform"></i>
+                        </button>
+                        <div id="faq3" class="hidden px-6 pb-6 text-sm text-slate-400 leading-relaxed border-t border-slate-800/60 pt-4">
+                            Haider integrated the Anthropic Claude API and Model Context Protocol (MCP) servers into internal platform tooling at Careem. This automated incident triage, runbook execution, and infrastructure diff summaries, reducing mean-time-to-triage (MTTR) by approximately 40%.
+                        </div>
+                    </div>
+
+                    <div class="rounded-2xl bg-slate-900/60 border border-slate-800 overflow-hidden">
+                        <button onclick="toggleFaq('faq4')" class="w-full px-6 py-5 text-left font-bold text-white hover:text-teal-400 flex justify-between items-center transition">
+                            <span>Is Haider open to remote international positions and consulting engagements?</span>
+                            <i id="faq4-icon" class="fas fa-chevron-down text-slate-500 transition-transform"></i>
+                        </button>
+                        <div id="faq4" class="hidden px-6 pb-6 text-sm text-slate-400 leading-relaxed border-t border-slate-800/60 pt-4">
+                            Yes. Haider is actively seeking full-time remote Senior DevOps Engineer, SRE, and Cloud Architect roles with global technology companies, as well as high-impact DevOps and cloud security consulting projects.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 8. RECRUITER & CLIENT CONTACT SECTION -->
+        <section id="contact" class="py-24 bg-navy-900 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12">
+                    
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <div class="text-xs font-mono text-teal-400 uppercase tracking-widest mb-2">// Let's Connect</div>
+                            <h2 class="text-3xl sm:text-4xl font-bold text-white">Hire Haider Ali or Book a DevOps Audit</h2>
+                            <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                                Looking to scale your AWS cloud infrastructure, migrate to Kubernetes, optimize infrastructure costs, or automate CI/CD pipelines? Reach out directly.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4 p-4 rounded-xl bg-navy-950 border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-500 font-mono">DIRECT EMAIL</div>
+                                    <a href="mailto:haiderch363@gmail.com" class="text-sm font-semibold text-white hover:text-teal-400 transition">haiderch363@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4 p-4 rounded-xl bg-navy-950 border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-500 font-mono">LINKEDIN PROFILE</div>
+                                    <a href="https://linkedin.com/in/haider-ali-iub" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-white hover:text-cyan-400 transition">linkedin.com/in/haider-ali-iub</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4 p-4 rounded-xl bg-navy-950 border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-500 font-mono">PHONE / WHATSAPP</div>
+                                    <span class="text-sm font-semibold text-white">+92 304 918 2908</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formspree Contact Form Integration -->
+                    <div class="lg:col-span-7">
+                        <form id="contactForm" action="https://formspree.io/f/xqpppygl" method="POST" class="p-8 rounded-3xl bg-navy-950 border border-slate-800 space-y-6">
+                            <h3 class="text-xl font-bold text-white border-b border-slate-800 pb-4">Inquiry Details</h3>
+                            
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-400 mb-2">YOUR NAME *</label>
+                                    <input type="text" id="name" name="name" required placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-teal-400 transition">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-400 mb-2">WORK EMAIL *</label>
+                                    <input type="email" id="email" name="email" required placeholder="sarah@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-teal-400 transition">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-400 mb-2">INQUIRY TYPE</label>
+                                    <select id="inquiry_type" name="inquiry_type" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-teal-400 transition">
+                                        <option value="Full-Time Remote Role">Full-Time Remote Role</option>
+                                        <option value="Cloud Infrastructure Consulting">Cloud Infrastructure Consulting</option>
+                                        <option value="Kubernetes / EKS Migration">Kubernetes / EKS Migration</option>
+                                        <option value="FinOps Cost Optimization">FinOps Cost Optimization</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-400 mb-2">INFRASTRUCTURE STACK</label>
+                                    <input type="text" id="stack" name="stack" placeholder="e.g. AWS, Kubernetes, Terraform" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-teal-400 transition">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-mono text-slate-400 mb-2">PROJECT DETAILS / JOB DESCRIPTION</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Describe the role requirements, cloud architecture challenges, or expected timeline..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-teal-400 transition"></textarea>
+                            </div>
+
+                            <!-- Anti-spam Honeypot -->
+                            <input type="text" name="_gotcha" style="display:none">
+
+                            <button type="submit" id="submitBtn" class="w-full py-4 rounded-xl bg-gradient-to-r from-teal-500 to-cyan-500 text-navy-950 font-bold hover:shadow-lg hover:shadow-teal-500/20 transition-all flex items-center justify-center gap-2">
+                                <span>Send Inquiry & Book Call</span>
+                            </button>
+
+                            <div id="formStatus" class="hidden p-4 rounded-xl text-xs text-center font-mono"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 border-t border-slate-900 py-12 px-4 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto space-y-3">
+            <p>&copy; 2026 Haider Ali. Senior DevOps Engineer & Cloud Infrastructure SRE.</p>
+            <p class="font-mono text-slate-600">AWS Certified Solutions Architect - Associate | Certified Kubernetes Administrator (CKA)</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Toggle Mobile Menu
+        function toggleMobileMenu() {
+            const nav = document.getElementById('mobileNav');
+            nav.classList.toggle('hidden');
+        }
+
+        // Toggle FAQ Accordions
+        function toggleFaq(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById(id + '-icon');
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Formspree AJAX Submission Logic
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const formStatus = document.getElementById('formStatus');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = `<span>Sending Message...</span>`;
+                formStatus.classList.add('hidden');
+
+                const formData = new FormData(contactForm);
+
+                try {
+                    const response = await fetch(contactForm.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        formStatus.textContent = "✔ Thank you! Your message has been sent successfully to Haider.";
+                        formStatus.className = "p-4 rounded-xl bg-teal-500/10 border border-teal-500/30 text-teal-400 text-xs text-center font-mono";
+                        contactForm.reset();
+                    } else {
+                        const data = await response.json();
+                        if (Object.hasOwn(data, 'errors')) {
+                            formStatus.textContent = data["errors"].map(error => error["message"]).join(", ");
+                        } else {
+                            formStatus.textContent = "Oops! There was a problem submitting your form. Please email haiderch363@gmail.com directly.";
+                        }
+                        formStatus.className = "p-4 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs text-center font-mono";
+                    }
+                } catch (error) {
+                    formStatus.textContent = "Network error occurred. Please try again or email haiderch363@gmail.com.";
+                    formStatus.className = "p-4 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs text-center font-mono";
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = `<span>Send Inquiry & Book Call</span>`;
+                    formStatus.classList.remove('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
